@@ -31,7 +31,7 @@ fi
 echo "use header temp: ${header_temp}"
 
 
-for i in $(find ${dir} -name "${filter}")
+for i in $(find ${dir} -type f -name "${filter}")
 do
   if ! grep -q 'Licensed to the Apache Software Foundation (ASF)' $i
   then
